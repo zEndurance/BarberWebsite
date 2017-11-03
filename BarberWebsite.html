@@ -10,13 +10,21 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-quarter img{margin-bottom: -6px; cursor: pointer}
 .w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
 </style>
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
 <body class="w3-light-grey">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
   <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">BOOKING</a> 
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">BARBERS</a> 
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME</a> 
+  <a href="#booking" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">BOOKING</a> 
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">BARBERS</a> 
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
 </nav>
 
@@ -30,7 +38,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px" id="home">
   
   <!-- Photo grid -->
   <div class="w3-row w3-grayscale-min">
@@ -70,6 +78,174 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
     </div>
   </div>
+  
+  
+  <!-- Team Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Anja Doe</h3>
+          <p class="w3-opacity">Art Director</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Dan Star</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="booking">
+<!-- Add your site or application content here -->
+        <form id="booking-form" class="booking-form" name="form1" method="post" action="">
+            <div align="center"><img class="logo" src="Logo" title="Booking" alt="Logo"></div>
+            <div class="h1">Appointment Booking Form</div>
+            <div id="form-message" class="message hide">
+                Thank you for your enquiry!
+            </div>
+            <div id="form-content">
+                <div class="group">
+                    <label for="date-from">Date</label>
+                    <div class="addon-right">
+                        <input id="date-from" name="date-from" class="form-control" type="text">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="room-type">Appointment time</label>
+                    <div>
+                        <select id="room-type" name="room-type" class="form-control">
+                            <option value="Single room">09:00</option>
+                            <option value="Double room">10:00</option>
+                            <option value="Apartment">11:00</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="group">
+                    <label for="room-requirements">Haircut</label>
+                    <div>
+                        <select id="room-requirements" name="room-requirements" class="form-control">
+                            <option value="No Preference">Clippers back and sides</option>
+                            <option value="Non Smoking">Long cut</option>
+                            <option value="Smoking">Short cut</option>
+                        </select>
+                    </div>
+                </div>
+				
+				<div class="group">
+                    <label for="room-barbers">Barber</label>
+                    <div>
+                        <select id="room-requirements" name="room-requirements" class="form-control">
+                            <option value="No Preference">Danny</option>
+                            <option value="Non Smoking">Jones</option>
+                            <option value="Smoking">Test</option>
+                        </select>
+                    </div>
+                </div>
+				
+                <div class="group">
+                    <label for="name">Name</label>
+                    <div><input id="name" name="name" class="form-control" type="text" placeholder="Name"></div>
+                </div>
+                <div class="group">
+                    <label for="email">Email</label>
+                    <div><input id="email" name="email" class="form-control" type="email" placeholder="Email"></div>
+                </div>
+                <div class="group">
+                    <label for="phone">Phone</label>
+                    <div><input id="phone" name="phone" class="form-control" type="text" placeholder="Phone"></div>
+                </div>
+                <div class="group">
+                    <label for="special-requirements">Barber requirements</label>
+                    <div><textarea id="special-requirements" name="special-requirements" class="form-control" cols="" rows="5" placeholder="Special requirements"></textarea></div>
+                </div>
+                <div class="group submit">
+                    <label class="empty"></label>
+                    <div><input name="submit" type="submit" value="Submit"/></div>
+                </div>
+            </div>
+            <div id="form-loading" class="hide"><i class="fa fa-circle-o-notch fa-spin"></i></div>
+        </form>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>     
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		
+</div>
+
+
+  
+  
+  <!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <br>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div>
+    <div class="w3-half">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
+    </div>
+  </div>
+</div>
+
+
+
   
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
